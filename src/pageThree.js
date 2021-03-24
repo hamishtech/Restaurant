@@ -2,8 +2,9 @@ export function generatePageThree() {
   let prevContainer = document.querySelector(".content");
   document.body.removeChild(prevContainer);
   let content = document.createElement("div");
-  let header = document.createElement("h1");
-  header.textContent = "Page 3: About Us";
-  content.appendChild(header);
+  content.classList.add("content");
+  let title = document.createElement("h1");
+  title.textContent = "Contact Us Here";
+  content.appendChild(title);
   document.body.appendChild(content);
 }
